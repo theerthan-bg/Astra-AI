@@ -86,4 +86,34 @@ This project was created for educational purposes and the Confluence 2.0 Interna
 
 ---
 
-⭐ If you like this project, don't forget to star this repository!
+
+
+
+## Frontend:
+- React.js / Flutter
+- HTML, CSS, JavaScript
+
+## Backend:
+- Python (FastAPI/Flask)
+- Node.js
+
+## Artificial Intelligence:
+- Large Language Model (LLM)
+- Natural Language Processing (NLP)
+- Speech-to-Text
+- Text-to-Speech
+
+## Database:
+- MySQL / PostgreSQL
+
+## Cloud & Security:
+- AWS / Azure
+- SBI Secure API Integration
+- Encryption and Authentication
+
+## Languages Supported:
+- English
+- Hindi
+- Kannada
+- Other Indian Languages
+#  ⭐ If you like this project, don't forget to star this repository!
