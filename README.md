@@ -1,28 +1,89 @@
 # 🚀 Astra AI
 
-**Your Personal Academic & Career Copilot**
+> **Your Personal Academic & Career Copilot**
 
-Astra AI is an AI-powered platform that helps students with personalized study planning, AI chat assistance, career guidance, progress tracking, and smart learning resources.
+Astra AI is an AI-powered academic and career assistant designed to help students learn smarter, stay organized, and achieve their goals through intelligent automation.
 
-## Features
+---
+
+## 📖 About
+
+Astra AI combines Artificial Intelligence with personalized learning to provide students with study planning, AI-powered assistance, career guidance, and progress tracking in one platform.
+
+---
+
+## ✨ Features
+
 - 🤖 AI Chat Assistant
-- 📚 Personalized Study Planner
+- 📚 Smart Study Planner
 - 🎯 Career Guidance
 - 📈 Progress Tracker
-- 📅 Smart Dashboard
+- 📅 Daily Task Dashboard
 - 📖 Learning Resources
+- 🌙 Modern Responsive UI
+- 🔒 Secure Authentication
 
-## Tech Stack
+---
+
+## 🛠 Tech Stack
+
 - React
 - TypeScript
 - Tailwind CSS
+- Vite
 - Supabase
 - Gemini AI API
 
-## Team
-- Team: T Things
-- Team Leader: Theerthan BG
-- Team Member: Ajay BR
+---
 
-## Status
-🚧 Prototype under development for Confluence 2.0 Hackathon.
+## 🎯 Project Goal
+
+Our goal is to simplify academic planning and career development by providing students with an intelligent AI assistant that supports learning, organization, and productivity.
+
+---
+
+## 📂 Project Structure
+
+```
+astra-ai/
+├── src/
+├── public/
+├── components/
+├── pages/
+├── assets/
+├── services/
+├── styles/
+└── README.md
+```
+
+---
+
+## 🚀 Future Roadmap
+
+- Voice AI Assistant
+- Mobile App (Android & iOS)
+- Multi-language Support
+- Smart Notifications
+- AI Exam Preparation
+- Placement Preparation
+- Cloud Sync
+
+---
+
+## 👨‍💻 Team
+
+**Team Name:** T Things
+
+**Team Leader:** Theerthan BG
+
+**Team Member:** Ajay BR
+
+---
+
+## 📜 License
+
+This project was created for educational purposes and the Confluence 2.0 International Hackathon.
+
+---
+
+⭐ If you like this project, don't forget to star this repository!
