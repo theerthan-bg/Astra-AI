@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Astra AI — Academic & Career Copilot</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        ✦ Astra <span>AI</span>
+    </div>
+
+    <nav>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#assistant">AI Coach</a>
+        <a href="#tasks">Tasks</a>
+        <a href="#career">Career</a>
+    </nav>
+
+    <button id="themeBtn" onclick="toggleTheme()">
+        ◐
+    </button>
+
+</header>
+
+
+<main>
+
+<section class="hero">
+
+    <div>
+
+        <div class="badge">
+            PERSONAL AI COPILOT
+        </div>
+
+        <h1>
+            Your AI partner for
+            <span>learning & career.</span>
+        </h1>
+
+        <p>
+            Astra AI helps students plan their studies,
+            understand difficult topics, manage tasks,
+            build skills and prepare for their careers.
+        </p>
+
+        <button onclick="openAssistant()">
+            Talk to Astra →
+        </button>
+
+    </div>
+
+
+    <div class="astra-orb">
+
+        <div class="orb">
+            ✦
+        </div>
+
+        <p>
+            AI Online
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- DASHBOARD -->
+
+<section id="dashboard" class="section">
+
+    <div class="section-heading">
+
+        <span>OVERVIEW</span>
+
+        <h2>
+            Your learning dashboard
+        </h2>
+
+    </div>
+
+
+    <div class="stats">
+
+        <div class="stat-card">
+
+            <span>📚</span>
+
+            <h3 id="studyHours">
+                12
+            </h3>
+
+            <p>
+                Study Hours
+            </p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>🎯</span>
+
+            <h3>
+                78%
+            </h3>
+
+            <p>
+                Weekly Progress
+            </p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>✅</span>
+
+            <h3 id="completedTasks">
+                8
+            </h3>
+
+            <p>
+                Tasks Completed
+            </p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>🔥</span>
+
+            <h3>
+                7
+            </h3>
+
+            <p>
+                Day Streak
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- AI ASSISTANT -->
+
+<section id="assistant" class="section assistant">
+
+    <div class="section-heading">
+
+        <span>ASTRA AI</span>
+
+        <h2>
+            Ask your AI coach
+        </h2>
+
+    </div>
+
+
+    <div class="chat-box">
+
+        <div id="messages">
+
+            <div class="bot-message">
+
+                <div class="avatar">
+                    ✦
+                </div>
+
+                <p>
+                    Hi! I'm Astra. I can help you
+                    with studies, programming,
+                    career planning and productivity.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="suggestions">
+
+            <button onclick="askQuick(
+                'Create a study plan for me'
+            )">
+                📚 Study Plan
+            </button>
+
+            <button onclick="askQuick(
+                'How can I improve my programming skills?'
+            )">
+                💻 Programming
+            </button>
+
+            <button onclick="askQuick(
+                'Give me career guidance'
+            )">
+                🚀 Career
+            </button>
+
+        </div>
+
+
+        <div class="chat-input">
+
+            <input
+                id="userMessage"
+                type="text"
+                placeholder="Ask Astra anything..."
+                onkeydown="enterMessage(event)"
+            >
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TASKS -->
+
+<section id="tasks" class="section">
+
+    <div class="section-heading">
+
+        <span>PRODUCTIVITY</span>
+
+        <h2>
+            Today's tasks
+        </h2>
+
+    </div>
+
+
+    <div class="task-container">
+
+        <div class="add-task">
+
+            <input
+                id="taskInput"
+                placeholder="Add a new task..."
+            >
+
+            <button onclick="addTask()">
+                + Add
+            </button>
+
+        </div>
+
+
+        <div id="taskList">
+
+            <div class="task">
+
+                <input
+                    type="checkbox"
+                    onchange="completeTask(this)"
+                >
+
+                <span>
+                    Study Data Structures
+                </span>
+
+            </div>
+
+
+            <div class="task">
+
+                <input
+                    type="checkbox"
+                    onchange="completeTask(this)"
+                >
+
+                <span>
+                    Practice C# for 30 minutes
+                </span>
+
+            </div>
+
+
+            <div class="task">
+
+                <input
+                    type="checkbox"
+                    onchange="completeTask(this)"
+                >
+
+                <span>
+                    Read one cybersecurity article
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CAREER -->
+
+<section id="career" class="section career">
+
+    <div class="section-heading">
+
+        <span>CAREER COPILOT</span>
+
+        <h2>
+            Build your future
+        </h2>
+
+    </div>
+
+
+    <div class="career-grid">
+
+        <div class="career-card">
+
+            <div>
+                💻
+            </div>
+
+            <h3>
+                Software Developer
+            </h3>
+
+            <p>
+                C#, Java, Python, web development
+                and software engineering.
+            </p>
+
+            <button onclick="careerAdvice('Software Developer')">
+                Explore
+            </button>
+
+        </div>
+
+
+        <div class="career-card">
+
+            <div>
+                🛡️
+            </div>
+
+            <h3>
+                Cybersecurity
+            </h3>
+
+            <p>
+                Linux, networking, ethical security
+                and security operations.
+            </p>
+
+            <button onclick="careerAdvice('Cybersecurity')">
+                Explore
+            </button>
+
+        </div>
+
+
+        <div class="career-card">
+
+            <div>
+                🤖
+            </div>
+
+            <h3>
+                AI Engineer
+            </h3>
+
+            <p>
+                Python, machine learning,
+                APIs and generative AI.
+            </p>
+
+            <button onclick="careerAdvice('AI Engineer')">
+                Explore
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div class="logo">
+        ✦ Astra <span>AI</span>
+    </div>
+
+    <p>
+        Your personal academic & career copilot.
+    </p>
+
+    <small>
+        AI prototype for educational purposes.
+    </small>
+
+</footer>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
